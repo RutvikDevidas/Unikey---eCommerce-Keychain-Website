@@ -1,0 +1,114 @@
+.navBar{
+    width: 100%;
+}
+
+.bg-darker{
+    background-color: rgb(29, 29, 29);
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.body-bg {
+    background: linear-gradient(to right top, #d224f5, #c8ff00, rgb(255, 0, 255), yellow, rgb(255, 0, 179));
+    background-size: 300% 300%;
+    animation: animate-gradient 10.5s ease-in-out infinite;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes animate-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.text-black{
+    color: black;
+    font-weight: bolder;
+}
+.bold{
+    font-weight: bold;
+}
+.bolder{
+    font-weight: bolder;
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    opacity: 1;
+    transition: 0.3s;
+    border-radius: 25%;
+}
+
+.product img {
+    width: 100%;
+    display: block;
+}
+
+.product-img {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    opacity: 1;
+    transition: 0.5s;
+    border-radius: 25%;
+}
+
+.product-img:hover {
+    height: 350px;
+    width: 350px;
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+
+.product-dis {
+    height: 300px;
+    width: 300px;
+    border-radius: 25%;
+    position: absolute;
+    background: rgba(85, 53, 29, 0.5);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.product-dis > h1 {
+    text-align: center;
+    padding: 8px;
+}
+
+.product-dis:hover {
+    opacity: 1;
+}
+
+.product-dis > * {
+    transform: translateY(25px);
+    transition: transform 1s;
+}
+
+.product-dis:hover > * {
+    transform: translateY(0);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
